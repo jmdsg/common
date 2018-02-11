@@ -43,13 +43,17 @@ public abstract class RawTuple2<T1, T2> implements RawTuple {
 	 *
 	 * @return the value of the first element
 	 */
-	public abstract T1 $1();
+	public T1 $1() {
+		return t1;
+	}
 
 	/**
 	 * Method that returns the value of the second element.
 	 *
 	 * @return the value of the second element
 	 */
-	public abstract T2 $2();
+	public T2 $2() {
+		return t2;
+	}
 
 }

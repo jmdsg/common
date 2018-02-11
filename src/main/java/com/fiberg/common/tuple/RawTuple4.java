@@ -59,27 +59,35 @@ public abstract class RawTuple4<T1, T2, T3, T4> implements RawTuple {
 	 *
 	 * @return the value of the first element
 	 */
-	public abstract T1 $1();
+	public T1 $1() {
+		return t1;
+	}
 
 	/**
 	 * Method that returns the value of the second element.
 	 *
 	 * @return the value of the second element
 	 */
-	public abstract T2 $2();
+	public T2 $2() {
+		return t2;
+	}
 
 	/**
 	 * Method that returns the value of the third element.
 	 *
 	 * @return the value of the third element
 	 */
-	public abstract T3 $3();
+	public T3 $3() {
+		return t3;
+	}
 
 	/**
 	 * Method that returns the value of the fourth element.
 	 *
 	 * @return the value of the fourth element
 	 */
-	public abstract T4 $4();
+	public T4 $4() {
+		return t4;
+	}
 
 }

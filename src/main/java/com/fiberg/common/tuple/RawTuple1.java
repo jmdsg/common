@@ -6,14 +6,14 @@ package com.fiberg.common.tuple;
 public abstract class RawTuple1<T1> implements RawTuple {
 
 	/**
-	 * Value of the element.
+	 * Value of the first element.
 	 */
 	protected T1 t1;
 
 	/**
 	 * Constructor of the tuple.
 	 *
-	 * @param t1 value of the element
+	 * @param t1 value of the first element
 	 */
 	public RawTuple1(final T1 t1) {
 		this.t1 = t1;
@@ -31,10 +31,12 @@ public abstract class RawTuple1<T1> implements RawTuple {
 	}
 
 	/**
-	 * Method that returns the value of the element.
+	 * Method that returns the value of the first element.
 	 *
-	 * @return the value of the element
+	 * @return the value of the first element
 	 */
-	public abstract T1 $1();
+	public T1 $1() {
+		return t1;
+	}
 
 }
