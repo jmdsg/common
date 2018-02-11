@@ -11,7 +11,9 @@ public interface Mutable extends MutableAware {
 	 * @return {@code true} because this is a mutable object
 	 * @see MutableAware#isMutable()
 	 */
-	boolean isMutable();
+	default boolean isMutable() {
+		return true;
+	}
 
 	/**
 	 * Method that indicates that this object is not immutable.
@@ -19,6 +21,8 @@ public interface Mutable extends MutableAware {
 	 * @return {@code false} because this is not an immutable object
 	 * @see MutableAware#isImmutable()
 	 */
-	boolean isImmutable();
+	default boolean isImmutable() {
+		return false;
+	}
 
 }

@@ -6,28 +6,6 @@ package com.fiberg.common.tuple;
 public abstract class RawTuple2<T1, T2> implements RawTuple {
 
 	/**
-	 * Value of the first element.
-	 */
-	protected T1 t1;
-
-	/**
-	 * Value of the second element.
-	 */
-	protected T2 t2;
-
-	/**
-	 * Constructor of the tuple.
-	 *
-	 * @param t1 value of the first element
-	 * @param t2 value of the second element
-	 */
-	public RawTuple2(final T1 t1,
-	                 final T2 t2) {
-		this.t1 = t1;
-		this.t2 = t2;
-	}
-
-	/**
 	 * Method that returns the cardinality of the tuple 2.
 	 *
 	 * @return the cardinality of 2
@@ -43,17 +21,13 @@ public abstract class RawTuple2<T1, T2> implements RawTuple {
 	 *
 	 * @return the value of the first element
 	 */
-	public T1 $1() {
-		return t1;
-	}
+	public abstract T1 $1();
 
 	/**
 	 * Method that returns the value of the second element.
 	 *
 	 * @return the value of the second element
 	 */
-	public T2 $2() {
-		return t2;
-	}
+	public abstract T2 $2();
 
 }
